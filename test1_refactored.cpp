@@ -81,6 +81,14 @@ int rec1_new(int x) {
 		return rec(x - 1); 
 }  
  
+int rec2(int x, int y) {  
+	int z = y;  
+	if (x == 1)  
+		return 1;  
+	else  
+		return rec2(x - 1, y); 
+}  
+ 
 int main() {  
 	int a = sqr(2);  
 	int b = getFive();  
