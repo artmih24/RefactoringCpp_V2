@@ -1,0 +1,10 @@
+﻿  RefactoringManager.cpp
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(28,23): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(43,23): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(48,27): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(51,56): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(56,63): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(59,62): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(67,31): warning C4018: <: несоответствие типов со знаком и без знака
+E:\Artem\NIR\NIR_refactoring\NIR_refactoring\NIR_refactoring\RefactoringManager.cpp(94,23): warning C4018: <: несоответствие типов со знаком и без знака
+  NIR_refactoring.vcxproj -> E:\Artem\NIR\NIR_refactoring\NIR_refactoring\Debug\NIR_refactoring.exe
