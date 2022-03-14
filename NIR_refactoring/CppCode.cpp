@@ -383,3 +383,7 @@ string CppCode::GetSep(string curLexeme, string nxtLexeme) {
     else
         return " ";
 }
+
+void CppCode::UpdateCode(string code) {
+    this->cppCode = code;
+}

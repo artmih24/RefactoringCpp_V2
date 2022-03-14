@@ -58,6 +58,8 @@ public:
 
     void UpdateLexemes();
 
+    void UpdateCode(string code);
+
     string ToString();
 
     string GetSep(string curLexeme, string nxtLexeme);

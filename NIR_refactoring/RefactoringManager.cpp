@@ -93,20 +93,27 @@ CppMethod RefactoringManager::RemoveAssignmentsToParameters(CppMethod method) {
 /// <param name="code">- исходный код программы</param>
 void RefactoringManager::RemoveParametersRefactoring(CppCode code) {
     vector<CppMethod> methods = code.GetMethods();
-    // рефакторинг реализаций методов - удаление лишних параметров
-    for (int i = 0; i < methods.size(); i++) {
-        methods[i] = this->RemoveParameters(methods[i]);
+    for (int j = 0; j < methods.size(); j++) {
+        // рефакторинг реализаций методов - удаление лишних параметров
+        for (int i = 0; i < methods.size(); i++) {
+            methods[i] = this->RemoveParameters(methods[i]);
+        }
+        code.UpdateMethods(methods);
+        code.UpdateLexemes();
+        this->code = code;
+        // рефакторинг во всем коде, включая и преобразованные 
+        // методы - удаление значений, передававшихся в неиспользуемые параметры
+        for (int i = 0; i < methods.size(); i++) {
+            code.UpdateMethodCalls(methods[i]);
+        }
+        code.UpdateMethods(methods);
+        code.UpdateLexemes();
+        this->code = code;
+        string codeString = code.ToString();
+        code.UpdateCode(codeString);
+        code.lexemes = code.GetLexemes();
+        methods = code.GetMethods();
     }
-    code.UpdateMethods(methods);
-    code.UpdateLexemes();
-    this->code = code;
-    // рефакторинг во всем коде, включая и преобразованные 
-    // методы - удаление значений, передававшихся в неиспользуемые параметры
-    for (int i = 0; i < methods.size(); i++) {
-        code.UpdateMethodCalls(methods[i]);
-    }
-    code.UpdateMethods(methods);
-    code.UpdateLexemes();
     this->code = code;
 }
 
